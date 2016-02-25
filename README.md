@@ -73,7 +73,6 @@ configuration here:
 Git urls can be of the form:
 
 + git://github.com/user/project.git#commit-ish
-+ git+ssh://user@hostname:project.git#commit-ish
 + git+ssh://user@hostname/project.git#commit-ish
 + git+http://user@hostname/project/blah.git#commit-ish
 + git+https://user@hostname/project/blah.git#commit-ish
