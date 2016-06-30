@@ -91,11 +91,11 @@ exports['get - should call git clone, if there no cached remote'] = function (te
 };
 
 
-exports['get - should call git clone without schema, if it ssh'] = function (test) {
+exports['get - should call git clone with schema and without colon, if it ssh'] = function (test) {
     var uri, expectedURI, exec, stat;
 
     uri = "ssh://git@mail.ru:jam.git";
-    expectedURI = uri.replace("ssh://", "");
+    expectedURI = "ssh://git@mail.ru/jam.git";
 
     exec = sinon.stub(cp, "exec", function(command, options, callback) {
         callback(null);
